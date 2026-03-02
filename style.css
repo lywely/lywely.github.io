@@ -139,6 +139,8 @@ h2 {
 .news-card:hover, .match-card:hover {
     transform: translateY(-5px); /* При наведении мышки карточка чуть-чуть "всплывает" вверх */
     background-color: #2a2a4a; /* И становится чуточку светлее */
+    border-color: #ff66aa; /* Появляется розовая рамка */
+    box-shadow: 0 10px 20px rgba(255, 102, 170, 0.1); /* Розоватое свечение */
 }
 
 /* 5. Убираем лишние отступы у текста внутри карточек */
@@ -235,12 +237,6 @@ h2 {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     cursor: pointer;
     border: 1px solid transparent; /* Подготовка для рамки */
-}
-
-/* При наведении карточка не только поднимается, но и подсвечивается */
-.news-card:hover, .match-card:hover {
-    border-color: #ff66aa; /* Появляется розовая рамка */
-    box-shadow: 0 10px 20px rgba(255, 102, 170, 0.1); /* Розоватое свечение */
 }
 
 /* Эффект нажатия (Scale) */
@@ -1113,5 +1109,254 @@ overflow-x: auto;
     .header-nav {
         gap: 15px;
         font-size: 14px;
+    }
+}
+
+/* ===================================== */
+/* ========= МОБИЛЬНАЯ АДАПТАЦИЯ ======= */
+/* ===================================== */
+
+/* Планшеты и маленькие ноутбуки */
+@media (max-width: 1024px) {
+    .main-grid {
+        padding: 0 15px;
+    }
+    
+    .header-search {
+        width: 150px;
+    }
+}
+
+/* Телефоны (портрет) — основная адаптация */
+@media (max-width: 768px) {
+    
+    /* === ШАПКА === */
+    .header {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        height: auto;
+        gap: 12px;
+    }
+    
+    .header-logo img {
+        height: 40px; /* Уменьшаем лого */
+    }
+    
+    .header-nav {
+        order: 3; /* Ссылки уходят вниз */
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 5px;
+    }
+    
+    .header-nav a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    
+    .header-search {
+        order: 2; /* Поиск посередине */
+        width: 100%;
+        max-width: none;
+        margin: 5px 0;
+    }
+    
+    .header-search input {
+        width: 100%;
+        padding: 10px 15px 10px 35px;
+        font-size: 14px;
+    }
+    
+    .header-search input:focus {
+        width: 100%; /* Не растягиваем */
+    }
+    
+    .header-profile {
+        order: 1; /* Кнопка входа справа вверху */
+        margin-left: auto;
+    }
+    
+    .login-btn {
+        padding: 6px 16px;
+        font-size: 13px;
+    }
+    
+    /* === КОНТЕНТ === */
+    .main-grid {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    /* Карточки: меньше отступы */
+    .news-card, .match-card, .result-row {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Заголовки: меньше размер */
+    h2 {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    /* === СТРАНИЦА ИГРОКА === */
+    .player-header-card {
+        flex-direction: column; /* Вертикальная компоновка */
+        padding: 25px 20px;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .player-info-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .player-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .player-nickname {
+        font-size: 32px;
+    }
+    
+    .player-real-name {
+        font-size: 16px;
+    }
+    
+    .player-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .stat-value {
+        font-size: 24px;
+    }
+    
+    .stat-label {
+        font-size: 11px;
+    }
+    
+    .player-skills {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* === ТАБЛИЦЫ === */
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+    }
+    
+    .ranking-table {
+        min-width: 600px; /* Таблица не сжимается, а скроллится */
+        font-size: 14px;
+    }
+    
+    .ranking-table th,
+    .ranking-table td {
+        padding: 12px 8px;
+    }
+    
+    /* === МАТЧИ И РЕЗУЛЬТАТЫ === */
+    .match-score-hero {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+    
+    .team-logo-big {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .score-main {
+        font-size: 36px;
+    }
+    
+    .match-teams {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .team:first-child,
+    .team:last-child {
+        justify-content: center; /* Центрируем на мобильных */
+    }
+    
+    /* === ФУТЕР === */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 0 20px 30px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    /* === ДОСТУПНОСТЬ: УВЕЛИЧИВАЕМ КЛИКАБЕЛЬНЫЕ ОБЛАСТИ === */
+    a, button, .login-btn, .news-card, .match-card {
+        min-height: 44px; /* Рекомендация Apple/Google для тач-интерфейсов */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Исключения: ссылки в тексте не должны быть огромными */
+    .news-card a, .result-team a {
+        min-height: auto;
+        display: inline;
+    }
+}
+
+/* Очень маленькие экраны (старые телефоны) */
+@media (max-width: 360px) {
+    .player-nickname {
+        font-size: 28px;
+    }
+    
+    .player-stats-grid {
+        grid-template-columns: 1fr; /* Одна колонка статистики */
+    }
+    
+    .trophy-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header-nav a {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+}
+
+/* === УЛУЧШЕНИЯ ДЛЯ ТЕМНОЙ ТЕМЫ НА МОБИЛЬНЫХ === */
+@media (max-width: 768px) {
+    /* Убираем hover-эффекты, которые не работают на тач-экранах */
+    .news-card:hover,
+    .match-card:hover,
+    .player-card:hover {
+        transform: none;
+        border-color: transparent;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Оставляем визуальную обратную связь при нажатии */
+    .news-card:active,
+    .match-card:active,
+    .login-btn:active {
+        transform: scale(0.98);
+        opacity: 0.9;
     }
 }
