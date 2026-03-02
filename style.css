@@ -1333,7 +1333,7 @@ h2 {
     font-size: 1em !important;
     word-break: break-word;
   }
-  .news-image-container, .team-logo-big, .player-avatar, .news-img, .player-team-badge img {
+ /* .news-image-container,*/ .team-logo-big, .player-avatar, /* .news-img, */ .player-team-badge img {
     width: 72vw !important;
     max-width: 140px !important;
     height: auto !important;
@@ -1531,4 +1531,5 @@ h2 {
     gap: 8px !important;
   }
 }
+
 
