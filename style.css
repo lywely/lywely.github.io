@@ -1025,8 +1025,8 @@ h2 {
 /* 12. RESPONSIVE (АДАПТАЦИЯ)                    */
 /* ============================================= */
 
-/* --- 900px --- */
-@media (max-width: 900px) {
+ /* --- 900px --- */
+/** @media (max-width: 900px) {
     .main-grid {
         grid-template-columns: 1fr;
         margin: 20px auto;
@@ -1062,7 +1062,7 @@ h2 {
 }
 
 /* --- 1024px --- */
-@media (max-width: 1024px) {
+/** @media (max-width: 1024px) {
     .main-grid {
         padding: 0 15px;
     }
@@ -1073,10 +1073,10 @@ h2 {
 }
 
 /* --- 768px (Mobile) --- */
-@media (max-width: 768px) {
+/** @media (max-width: 768px) {
 
     /* Header */
-    .header {
+  /**  .header {
         flex-wrap: wrap;
         padding: 10px 15px;
         height: auto;
@@ -1126,10 +1126,10 @@ h2 {
     .login-btn {
         padding: 6px 16px;
         font-size: 13px;
-    }
+    } 
 
     /* Content */
-    .main-grid {
+ /**   .main-grid {
         margin: 20px auto;
         padding: 0 15px;
     }
@@ -1149,7 +1149,7 @@ h2 {
     }
 
     /* Player Page */
-    .player-header-card {
+  /**  .player-header-card {
         flex-direction: column;
         padding: 25px 20px;
         text-align: center;
@@ -1195,7 +1195,7 @@ h2 {
     }
 
     /* Tables */
-    .table-wrapper {
+  /**  .table-wrapper {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
@@ -1211,7 +1211,7 @@ h2 {
     }
 
     /* Match Hero */
-    .match-score-hero {
+/**    .match-score-hero {
         flex-direction: column;
         padding: 25px 20px;
         gap: 20px;
@@ -1237,7 +1237,7 @@ h2 {
     }
 
     /* Footer */
-    .footer-content {
+ /**   .footer-content {
         flex-direction: column;
         text-align: center;
         gap: 25px;
@@ -1249,7 +1249,7 @@ h2 {
     }
 
     /* Touch-friendly */
-    a, button, .login-btn, .news-card, .match-card {
+  /**  a, button, .login-btn, .news-card, .match-card {
         min-height: 44px;
         display: inline-flex;
         align-items: center;
@@ -1263,7 +1263,7 @@ h2 {
 }
 
 /* --- 360px (Small Phones) --- */
-@media (max-width: 360px) {
+/** @media (max-width: 360px) {
     .player-nickname {
         font-size: 28px;
     }
@@ -1284,7 +1284,7 @@ h2 {
 }
 
 /* --- Touch Optimizations --- */
-@media (max-width: 768px) {
+/** @media (max-width: 768px) {
     .news-card:hover,
     .match-card:hover,
     .player-card:hover {
@@ -1299,4 +1299,70 @@ h2 {
         transform: scale(0.98);
         opacity: 0.9;
     }
+} */
+
+
+
+
+
+
+
+/* --- Mobile Ultra (480px, 420px, 360px) --- */
+@media (max-width: 600px) {
+  html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .main-grid, .main-grid.single-column, .main-grid > section,
+  .content-left, .content-right, .results-section, .ranking-section,
+  .player-header-card, .match-score-hero, .footer-content, .player-achievements {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 6px !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+  }
+  /* Cards, Images */
+  .news-card, .match-card {
+    padding: 8px !important;
+    min-width: 0 !important;
+  }
+  .news-card h3, .news-card p, h2, h3, h1, .player-nickname, .player-real-name, .score-main {
+    font-size: 1em !important;
+    word-break: break-word;
+  }
+  .news-image-container, .team-logo-big, .player-avatar, .news-img, .player-team-badge img {
+    width: 72vw !important;
+    max-width: 140px !important;
+    height: auto !important;
+  }
+  /* Header */
+  .header {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 8px 4px !important;
+    gap: 5px;
+    min-width: 0 !important;
+    width: 100vw !important;
+  }
+  .header-logo img { max-width: 90px !important; height: auto !important; }
+  /* Navbar & search */
+  .header-nav { flex-direction: column !important; gap: 7px !important; margin-top: 2px !important; width: 100vw !important; justify-content: flex-start; align-items: flex-start; }
+  .header-search { width: 100% !important; max-width: none !important; margin: 7px 0 !important; }
+  .header-search input { font-size: 0.96em !important; min-width: 120px !important; }
+  .login-btn { padding: 8px 20px !important; width: 95vw !important; margin: 0 !important; font-size: 1em !important; }
+  /* Tables */
+  .table-wrapper { width: 100vw !important; overflow-x: auto !important; }
+  .ranking-table, .ranking-table th, .ranking-table td { font-size: 13px !important; min-width: 330px !important; padding: 8px 4px !important; }
+  /* Footer */
+  .footer-content { flex-direction: column !important; gap: 7px !important; width: 99vw !important; text-align: left !important; padding: 0 4px 16px 2px !important;}
+  .footer-logo { font-size: 18px !important; }
+  .social-icons { gap: 7px !important; }
+  .footer-bottom { font-size: 11px !important; padding: 8px !important; }
+  /* Other: trophy/skills grid */
+  .player-stats-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 6px !important; }
+  .player-skills { min-width: 0 !important; width: 100% !important; }
+  .trophy-list { flex-wrap: wrap !important; justify-content: center !important; gap: 18px !important; }
 }
