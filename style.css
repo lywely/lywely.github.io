@@ -1308,7 +1308,7 @@ h2 {
 
 
 /* --- Mobile Ultra (480px, 420px, 360px) --- */
-/** @media (max-width: 600px) {
+ @media (max-width: 600px) {
   html, body {
     padding: 0;
     margin: 0;
@@ -1325,7 +1325,7 @@ h2 {
     margin: 0 auto !important;
   }
   /* Cards, Images */
-  /** .news-card, .match-card {
+    .news-card, .match-card {
     padding: 8px !important;
     min-width: 0 !important;
   }
@@ -1334,7 +1334,7 @@ h2 {
     word-break: break-word;
   }
  /* .news-image-container,*/ .team-logo-big, .player-avatar, /* .news-img, */ .player-team-badge img {
- /**   width: 72vw !important;
+    width: 72vw !important;
     max-width: 140px !important;
     height: auto !important;
   }
@@ -1354,10 +1354,10 @@ h2 {
   .header-search input { font-size: 0.96em !important; min-width: 120px !important; }
   .login-btn { padding: 8px 20px !important; width: 95vw !important; margin: 0 !important; font-size: 1em !important; }
   /* Tables */
-/**  .table-wrapper { width: 100vw !important; overflow-x: auto !important; }
+  .table-wrapper { width: 100vw !important; overflow-x: auto !important; }
   .ranking-table, .ranking-table th, .ranking-table td { font-size: 13px !important; min-width: 330px !important; padding: 8px 4px !important; }
   /* Footer */
-/**  .footer-content { flex-direction: column !important; gap: 7px !important; width: 99vw !important; text-align: left !important; padding: 0 4px 16px 2px !important;}
+  .footer-content { flex-direction: column !important; gap: 7px !important; width: 99vw !important; text-align: left !important; padding: 0 4px 16px 2px !important;}
   .footer-logo { font-size: 18px !important; }
   .social-icons { gap: 7px !important; }
   .footer-bottom { font-size: 11px !important; padding: 8px !important; }
@@ -1531,6 +1531,7 @@ h2 {
     gap: 8px !important;
   }
 }
+
 
 
 
