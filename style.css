@@ -1370,6 +1370,101 @@ h2 {
 
 
 
+
+@media (max-width: 768px) {
+  .header-search {
+    width: 100vw !important;
+    max-width: 600px !important;
+    margin: 2px auto 8px auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .header-search input {
+    width: 80vw !important;
+    min-width: 120px !important;
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-image-container {
+    width: 100% !important;
+    max-width: 480px !important;
+    min-height: 140px !important;
+    height: 180px !important;
+    margin: 0 auto 10px auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .news-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 15px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header, .header-nav {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+    gap: 7px !important;
+  }
+  .header-logo, .header-logo img { margin-right: 7px !important; }
+  .header-nav { gap: 6px !important; }
+  .header-search { margin-left: 8px !important; }
+  .header-profile { margin-left: 8px !important; margin-top: 0 !important; }
+}
+
+@media (max-width: 768px) {
+  .match-score-hero {
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+    gap: 14px !important;
+    padding: 12px !important;
+  }
+  .hero-team {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 5px !important;
+    min-width: 80px !important;
+  }
+  .team-logo-big {
+    width: 48px !important;
+    height: 48px !important;
+    margin-bottom: 4px !important;
+  }
+  .hero-team h2 {
+    font-size: 13px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .player-card {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 4px !important;
+    padding: 6px 7px !important;
+    margin-bottom: 7px !important;
+  }
+  .player-card span, .player-card small {
+    font-size: 13px !important;
+    word-break: break-word;
+    white-space: nowrap;
+    align-self: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .player-header-card {
     flex-direction: row !important;
@@ -1436,3 +1531,4 @@ h2 {
     gap: 8px !important;
   }
 }
+
