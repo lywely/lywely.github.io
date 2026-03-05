@@ -1,0 +1,35 @@
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">EXTV</div>
+            <p>Широкая база игроков, событий, матчей и статистики.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Мы в соцсетях</h4>
+            <div class="social-icons">
+                <a href="#" class="social-link">MAX</a>
+                <a href="#" class="social-link">TG</a>
+                <a href="#" class="social-link">TIK</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 1984 - 2026 EXTV Project.
+    </div>
+    </footer>
+
+
+
+  
+        

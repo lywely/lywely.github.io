@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Spirit - EXTV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<main class="main-grid single-column">
+
+    <!-- TEAM HEADER -->
+    <section class="team-header-card">
+        <div class="team-main-info">
+            <img src="https://img-cdn.hltv.org/teamlogo/ywdn4tmAvXfllLeV2SkkvF.png?ixlib=java-2.1.0&w=100&s=e441b77b1cafbca20ba9f667caca56f4" alt="Team Spirit logo" class="team-logo-big">
+            <div>
+                <h1 class="team-page team-name">Team Spirit</h1>
+                <p class="team-country">
+                    <img src="https://www.hltv.org/img/static/flags/30x20/RU.gif" class="flag">
+                    Russia
+                </p>
+                <p class="team-ranking">World Ranking: <span>#1</span></p>
+            </div>
+        </div>
+
+        <div class="team-stats">
+            <div class="team-stat">
+                <span class="stat-value">1000</span>
+                <span class="stat-label">Points</span>
+            </div>
+            <div class="team-stat">
+                <span class="stat-value">50%</span>
+                <span class="stat-label">Winrate</span>
+            </div>
+            <div class="team-stat">
+                <span class="stat-value">12</span>
+                <span class="stat-label">Trophies</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINEUP -->
+    <section>
+        <h2>Current Lineup</h2>
+
+        <div class="team-lineup">
+            <a href="#" class="lineup-player">
+                <img src="https://img-cdn.hltv.org/playerbodyshot/Grz5vLIlrpeI7IQmm8d-jH.png?ixlib=java-2.1.0&w=400&s=3cfc5c3d0dbe422578931aabe14faa3c" alt="donk">
+                <span>sh1ro</span>
+            </a>
+
+           <a href="#" class="lineup-player">
+                <img src="https://img-cdn.hltv.org/playerbodyshot/1V7ijAaTXl3umTr7cPo0VF.png?ixlib=java-2.1.0&w=400&s=fd243be6d54de849949d6a837c3abe5e" alt="magixx">
+                <span>magixx</span>
+            </a>
+
+            <a href="#" class="lineup-player">
+                <img src="https://img-cdn.hltv.org/playerbodyshot/PONEIASU8jyJz2lnNS13bp.png?ixlib=java-2.1.0&w=400&s=c995668c01532a97dc5709f25f479f8d" alt="tN1R">
+                <span>tN1R</span>
+            </a>
+
+            <a href="#" class="lineup-player">
+                <img src="https://img-cdn.hltv.org/playerbodyshot/wi3shJIerTjUCELul_JOus.png?ixlib=java-2.1.0&w=400&s=ce5a7296c8ec30e2bae0592b3be12667" alt="zont1x">
+                <span>zont1x</span>
+            </a>
+            
+            <a href="player.html" class="lineup-player">
+                <img src="https://img-cdn.hltv.org/playerbodyshot/C4b0sMnty05S40UmXhLRD4.png?ixlib=java-2.1.0&w=400&s=8d846371bff4a867c0fcc3e038e02b1f" alt="donk">
+                <span>donk</span>
+            </a>
+            
+            
+        </div>
+    </section>
+
+    <!-- RECENT MATCHES -->
+    <section>
+        <h2>Recent Matches</h2>
+
+        <div class="match-card">
+            <div class="match-teams">
+                <span>Team Spirit</span>
+                <span class="match-score">2 : 0</span>
+                <span>Team Expoo</span>
+            </div>
+            <div class="match-event">ESL Pro League</div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        © 2026 EXTV. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
