@@ -1,0 +1,18 @@
+[
+  {
+    "id": "expoo",
+    "name": "Team Expoo",
+    "short": "EXPOO",
+    "country": "RU",
+    "logo": "images/teams/navi.png",
+    "rank": 2
+  },
+  {
+    "id": "spirit",
+    "name": "Team Spirit",
+    "short": "Spirit",
+    "country": "RU",
+    "logo": "images/teams/spirit.png",
+    "rank": 1
+  }
+]

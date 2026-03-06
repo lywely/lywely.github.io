@@ -1,0 +1,16 @@
+[
+  {
+    "nickname": "sw1k",
+    "team": "expoo",
+    "country": "RU",
+    "image": "images/players/s1mple.png",
+    "rating": 1.06
+  },
+  {
+    "nickname": "donk",
+    "team": "spirit",
+    "country": "RU",
+    "image": "images/players/donk.png",
+    "rating": 1.41
+  }
+]
