@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Team - EXTV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<main class="main-grid single-column">
+
+<section class="team-header-card">
+
+<div class="team-main-info">
+
+<img id="team-logo" class="team-logo-big">
+
+<div>
+<h1 id="team-name"></h1>
+<p id="team-country"></p>
+<p class="team-ranking">World Ranking: <span id="team-ranking"></span></p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+<h2>Current Lineup</h2>
+<div class="team-lineup" id="team-lineup"></div>
+</section>
+
+</main>
+
+<script src="js/team-loader.js"></script>
+
+</body>
+</html>

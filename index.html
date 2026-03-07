@@ -9,33 +9,21 @@
 </head>
 <body>
 
-    <header class="header">
-    <div class="header-logo">
-        <a href="index.html"><img src="images/logowhite.png" alt="EXTV"></a>
-    </div>
+    <div id="header"></div>
 
-    <nav class="header-nav">
-        <a href="matches.html">Матчи</a>
-        <a href="results.html">Результаты</a>
-        <a href="index.html">Новости</a>
-        <a href="ranking.html">Рейтинг</a>
-        
-        <div class="header-search">
-            <input type="text" placeholder="Search..." id="globalSearch">
-            <span class="search-icon">🔍</span>
-        </div>
-    </nav>
-
-    <div class="header-profile">
-        <button class="login-btn">Войти</button>
-    </div>
-</header>
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
     <main class="main-grid">
         
         <section class="content-left">
             <h2>Последние новости</h2>
-            
+            <a href="team.html">sa</a>
             <div class="news-card">
                 <div class="news-image-container">
                     <img src="images/epl23.png" alt="ESL Pro League Season 23 banner" class="news-img">
@@ -58,9 +46,11 @@
                 <h3>EXPOO попали в скандал на Aventus Cup.</h3>
                 <p>Aventus Cup исключили TE из-за подозрений в читерстве. Команда отвергает обвинения.
                 Последний матч Expoo закончился со счктом 2:0. Dust 2 Team Expoo выиграли со счетом 13:0, при этом совершив 3 убийства ножом. 
-                Позже, админ Aventus Cup сообщил, что TE исключены, так как являются "Читерами". Проверки не было. 
-                <blockquote><i><b>Без проверки банить за читы.</b> Есть подозрения что Cancers друзья вортекс и им по дружбе отдали победу</i> — <cite><b>sw1k</b></cite></blockquote>
+                Позже, админ Aventus Cup сообщил, что TE исключены, так как являются "Читерами". Проверки не было.
                 </p>
+
+                <blockquote><i><b>Без проверки банить за читы.</b> Есть подозрения что Cancers друзья вортекс и им по дружбе отдали победу</i> — <cite><b>sw1k</b></cite></blockquote>
+                
                 <p>
                     Telegram канал Team Expoo написал <a href="https://t.me/ExpooTeam/448">пост</a> где рассказали о всех грехах организаторов Aventus Cup. <br>
                     Так же команда рассказала что проверять их на читы отказались, но при этом все равно обвиняют. <br>

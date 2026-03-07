@@ -1,16 +1,27 @@
 [
   {
-    "nickname": "sw1k",
-    "team": "expoo",
-    "country": "RU",
-    "image": "images/players/s1mple.png",
-    "rating": 1.06
+    "name": "donk",
+    "team": "Team Spirit",
+    "photo": "https://img-cdn.hltv.org/playerbodyshot/C4b0sMnty05S40UmXhLRD4.png?ixlib=java-2.1.0&w=400&s=8d846371bff4a867c0fcc3e038e02b1f"
   },
   {
-    "nickname": "donk",
-    "team": "spirit",
-    "country": "RU",
-    "image": "images/players/donk.png",
-    "rating": 1.41
+    "name": "sh1ro",
+    "team": "Team Spirit",
+    "photo": "https://img-cdn.hltv.org/playerbodyshot/Grz5vLIlrpeI7IQmm8d-jH.png?ixlib=java-2.1.0&w=400&s=3cfc5c3d0dbe422578931aabe14faa3c"
+  },
+  {
+    "name": "magixx",
+    "team": "Team Spirit",
+    "photo": "images/players/magixx.png"
+  },
+  {
+    "name": "zont1x",
+    "team": "Team Spirit",
+    "photo": "images/players/zont1x.png"
+  },
+  {
+    "name": "chopper",
+    "team": "Team Spirit",
+    "photo": "images/players/chopper.png"
   }
 ]

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Team Spirit - EXTV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,7 +54,7 @@ fetch("header.html")
     <section>
         <h2>Current Lineup</h2>
 
-        <div class="team-lineup">
+        <!--<div class="team-lineup">
             <a href="#" class="lineup-player">
                 <img src="https://img-cdn.hltv.org/playerbodyshot/Grz5vLIlrpeI7IQmm8d-jH.png?ixlib=java-2.1.0&w=400&s=3cfc5c3d0dbe422578931aabe14faa3c" alt="donk">
                 <span>sh1ro</span>
@@ -80,20 +81,36 @@ fetch("header.html")
             </a>
             
             
-        </div>
+        </div> -->
+        <div class="team-lineup" id="team-lineup"></div>
     </section>
 
     <!-- RECENT MATCHES -->
     <section>
         <h2>Recent Matches</h2>
 
-        <div class="match-card">
-            <div class="match-teams">
-                <span>Team Spirit</span>
-                <span class="match-score">2 : 0</span>
-                <span>Team Expoo</span>
+        <div class="team-match">
+            <div class="team-left">
+            Team Spirit
             </div>
-            <div class="match-event">ESL Pro League</div>
+                <div class="team-match-score">
+                2 : 0
+                </div>
+            <div class="team-right">
+            Team Expoo
+            </div>
+        </div>
+
+        <div class="team-match">
+            <div class="team-left">
+            Team Spirit
+            </div>
+                <div class="team-match-score">
+                10 : 13
+                </div>
+            <div class="team-right">
+            Vitality
+            </div>
         </div>
 
     </section>
@@ -105,6 +122,8 @@ fetch("header.html")
         © 2026 EXTV. All rights reserved.
     </div>
 </footer>
+
+<script src="js/data-loader.js"></script>
 
 </body>
 </html>
